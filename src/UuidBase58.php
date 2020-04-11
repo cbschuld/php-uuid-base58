@@ -40,7 +40,10 @@ class UuidBase58
         $bitcoin = new Base58Encoder();
         $decodeInput = (string)bin2hex($bitcoin->decode($info));
         return preg_replace(
-            "/(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})/i", "$1-$2-$3-$4-$5", $decodeInput);
+            "/(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})/i",
+            "$1-$2-$3-$4-$5",
+            $decodeInput
+        );
     }
     public static function id() {
         return self::encode(Uuid::uuid4());
