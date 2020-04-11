@@ -1,7 +1,9 @@
 # php-uuid-base58
 
 <p>
-    https://img.shields.io/travis/cbschuld/php-uuid-base58/master?style=flat-square
+    <img src="https://img.shields.io/travis/cbschuld/php-uuid-base58/master?style=flat-square"/>
+    <img src="https://img.shields.io/packagist/l/cbschuld/php-uuid-base58?style=flat-square"/>
+    <img src="https://img.shields.io/packagist/dm/cbschuld/php-uuid-base58?style=flat-square"/>
 </p>
 
 Generates a RFC4122 compliant v4 UUID and returns it encoded in base-58. This is great for creating unique IDs which only consume 22 characters of storage. Also provides base-58 encoding and decoding.
